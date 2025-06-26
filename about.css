@@ -3,13 +3,6 @@ box-sizing: border-box;
 padding: 0;
 }
 
-.montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-}
-
 #barra-lateral{
     position: fixed;
     height: 100vb;
@@ -24,15 +17,6 @@ padding: 0;
     padding-top: 28px;
     padding-left: 28px;
     position: absolute;
-}
-
-#checkbox-menu{
-    position: absolute;
-    top: 3%;
-    left: 3%;
-    width: 90px;
-    height: 90px;
-    opacity: 0;
 }
 
 #redes-barra{
@@ -50,11 +34,184 @@ padding: 0;
     color: #212529;
 }
 
+
+#task_bar{
+    background-color: white;
+    height: 100vh;
+    width: 90px;
+    position: fixed;
+}
+
+#opcao{
+    background-color: #0f0f0f;
+    height: 90px;
+    width: 90px;
+}
+
+#img_option{
+    position: absolute;
+    top: 2%;
+    left: 25%;
+}
+
+#social_media{
+    position: absolute;
+    top:41%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 255px;
+    width: 18px;
+}
+
+#pag-social-midia{
+    position: absolute;
+    top:80%;
+    left: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    width: 180px;
+}
+
+#check-barra-lateral{
+    opacity: 0;
+    height: 90px;
+    width: 90px;
+    border: none;
+    z-index: 99;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#check-barra-lateral:checked+#paginas{
+    visibility: visible;
+    transition: 0.5s;
+}
+
+#paginas{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    z-index: 90;
+    visibility: hidden;
+}
+
+#voltar{
+    background-color: #0f0f0f;
+    height: 90px;
+    width: 90px;
+}
+
+#img-voltar{
+    position: absolute;
+    top: 2%;
+    left: 6%;
+    width: 20%;
+
+}
+
+#tulen{
+    background-color: #2916E0;
+    width: 180px;
+    height: 90px;
+    position: absolute;
+    top: 0%;
+    left: 33.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tulen_att{
+    width: 180px;
+    height: 90px;
+    position: absolute;
+}
+
+#nome-pag{
+    width: 110px;
+    height: 82%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_pages{
+    text-decoration: none;
+    font-size: 30px;
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #B2B2B2;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#home:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#about:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#gallery:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#blog:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#contact:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#about{
+    color: #2916E0;
+}
+
+.texto-copy{
+    position: absolute;
+    top: 85%;
+    left: 14%;
+    text-align: center;
+    font-size: 19px;
+    color: #636363;
+}
+
+.ti-heart{
+    color: #e21010;
+    font-size: 16px;
+}
+
+#colorib{
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+#colorib:hover {
+    color: #2916E0;
+}
+
 #foto-perfil{
     background-color: #2916e0;
     width: 45%;
-    height: 100vb;
+    height: 100%;
     margin-left: 90px;
+    display: inline-block;
 }
 
 #imagem-pessoa-espaco{
@@ -67,7 +224,7 @@ padding: 0;
 
 #imagem-pessoa img{
     border-radius: 50%;
-    margin-top: 3%;
+    margin-top: 10%;
     margin-left: 20%;
 }
 
@@ -88,4 +245,50 @@ padding: 0;
 
 #glen-negrito{
     font-weight: bold;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#texto-corpo{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-left: 18%;
+    margin-top: 3%;
+}
+
+#say-hello{
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 160px;
+    height: 46px;
+    margin-left: 18%;
+    margin-top: 3%;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5%;
+}
+
+#baixo-botao{
+    height: 4vb;
+}
+
+#email-colorib{
+    width: 10%;
+    position: absolute;
+    top: 98%;
+    left: 25%;
+}
+
+#colorib-a{
+    color: white;
 }
