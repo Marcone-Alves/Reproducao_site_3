@@ -1,0 +1,328 @@
+*{ margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    }
+    
+    #barra-lateral{
+        position: fixed;
+        height: 100vb;
+        width: 5%;
+        background-color: white;
+    }
+    
+    #menu{
+        height: 10%;
+        background-color: #0f0f0f;
+        width: 100%;
+        padding-top: 28px;
+        padding-left: 28px;
+        position: absolute;
+    }
+    
+    #redes-barra{
+        height: 100vb;
+        width: 100%;
+    }
+    
+    #redes-meio{
+        padding-top: 400%;
+        text-align: center;
+    }
+    
+    .padding-img{
+        margin-top: 50px;
+        color: #212529;
+    }
+    
+    #imagens{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        left: 5%;
+    }
+    
+    .imgs{ 
+        background-position: 20% center;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        flex-grow: 1;
+        transition: 0.5s;
+    }
+    
+    .imgs:hover{
+        flex-grow: 6;
+        transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .imgs:hover ~ #img1{
+        flex-grow: 1;
+        transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0.4 );
+    }
+    
+    #img1{
+        background-image: url(5.jpg.webp);
+        flex-grow: 6;
+        order: -1;
+        align-content: end;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    #img2{
+        background-image: url(1.jpg.webp);
+        align-content: end;
+    }
+    
+    #img3{
+        background-image: url(2.jpg.webp);
+        align-content: end;
+    }
+    
+    #img4{
+        background-image: url(3.jpg.webp);
+        align-content: end;
+    }
+    
+    #img5{
+        background-image: url(4.jpg.webp);
+        align-content: end;
+    }
+    
+    .montserrat {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .elementos-baixo{
+        width: 40%;
+        height: 25vb;
+        position: absolute;
+        top: 70%;
+        display: none;
+    }
+    
+    .people{
+        display: flex;
+        background-color: white;
+        color: #2916e0;
+        font-size: 12px;
+        font-weight: 600;
+        width: 90px;
+        justify-content: center;
+        border-radius: 5px;
+        height: 3vh;
+        margin-left: 50px;
+    }
+    
+    .flavio{
+        font-size: 60px;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 50px;
+    }
+    
+    .img-perfil{
+        border-radius: 50px;
+        margin-left: 50px;
+    }
+    
+    .arthur{
+        display: flex;
+        font-weight: 600;
+        color: #fff;
+        font-size: 24px;
+    }
+    
+    .rose{
+        padding-top: 3px;
+        padding-left: 7px;
+    }
+    
+    .imgs:hover .elementos-baixo{
+        display: block;
+    }  
+    
+    #baixo-img1{
+        display: block;
+        padding-left: 90px;
+    }
+    
+    .imgs:hover ~ #img1 #baixo-img1{
+        display: none;
+    }
+    
+    #task_bar{
+        background-color: white;
+        height: 100vh;
+        width: 90px;
+        position: fixed;
+    }
+    
+    #opcao{
+        background-color: #0f0f0f;
+        height: 90px;
+        width: 90px;
+    }
+    
+    #img_option{
+        position: absolute;
+        top: 2%;
+        left: 25%;
+    }
+    
+    #social_media{
+        position: absolute;
+        top:41%;
+        left: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 255px;
+        width: 18px;
+    }
+    
+    #pag-social-midia{
+        position: absolute;
+        top:80%;
+        left: 18%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20px;
+        width: 180px;
+    }
+    
+    #check-barra-lateral{
+        opacity: 0;
+        height: 90px;
+        width: 90px;
+        border: none;
+        z-index: 99;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    
+    #check-barra-lateral:checked+#paginas{
+        visibility: visible;
+        transition: 0.5s;
+    }
+    
+    #paginas{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 270px;
+        background-color: rgb(255, 255, 255);
+        z-index: 90;
+        visibility: hidden;
+    }
+    
+    #voltar{
+        background-color: #0f0f0f;
+        height: 90px;
+        width: 90px;
+    }
+    
+    #img-voltar{
+        position: absolute;
+        top: 2%;
+        left: 6%;
+        width: 20%;
+    
+    }
+    
+    #tulen{
+        background-color: #2916E0;
+        width: 180px;
+        height: 90px;
+        position: absolute;
+        top: 0%;
+        left: 33.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #tulen_att{
+        width: 180px;
+        height: 90px;
+        position: absolute;
+    }
+    
+    #nome-pag{
+        width: 110px;
+        height: 82%;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text_pages{
+        text-decoration: none;
+        font-size: 30px;
+        font-family:  "Montserrat", sans-serif;
+        font-weight: 600;
+        color: #B2B2B2;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    
+    #home:hover{
+        color: #2916E0;
+        transition: 0.3s;
+    }
+    
+    #about:hover{
+        color: #2916E0;
+        transition: 0.3s;
+    }
+    
+    #gallery:hover{
+        color: #2916E0;
+        transition: 0.3s;
+    }
+    
+    #blog:hover{
+        color: #2916E0;
+        transition: 0.3s;
+    }
+    
+    #contact:hover{
+        color: #2916E0;
+        transition: 0.3s;
+    }
+    
+    #home{
+        color: #2916E0;
+    }
+    
+    .texto-copy{
+        position: absolute;
+        top: 85%;
+        left: 14%;
+        text-align: center;
+        font-size: 19px;
+        color: #636363;
+    }
+    
+    .ti-heart{
+        color: #e21010;
+        font-size: 16px;
+    }
+    
+    #colorib{
+        text-decoration: none;
+        color: #B2B2B2;
+    }
+    
+    #colorib:hover {
+        color: #2916E0;
+    }
